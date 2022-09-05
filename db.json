@@ -1,0 +1,68 @@
+{
+  "reviews": [
+    {
+      "name": "Shirley T.",
+      "rating": 5,
+      "date": "03/21/2022",
+      "id": 1,
+      "text": "High quality work, excellent customer service!!!! Support local business!! This is one of them!"
+    },
+    {
+      "name": "Shirley T.",
+      "rating": 3,
+      "date": "03/21/2022",
+      "id": 2,
+      "text": "I bought a new 2020 Audi A3 and decided to put a ceramic coating on the car and also a ceramic window tint (black ..."
+    },
+    {
+      "name": "Shirley T.",
+      "rating": 2,
+      "date": "03/21/2022",
+      "id": 3,
+      "text": "I brought my Tesla Model 3 Performance here for a full frontal Xpel Ultimate Plus paint protection film, Xpel XR Black tint. and full coverage ceramic..."
+    },
+    {
+      "name": "Shirley T.",
+      "rating": 2,
+      "date": "03/21/2022",
+      "id": 4,
+      "text": "I brought my Tesla Model 3 Performance here for a full frontal Xpel Ultimate Plus paint protection film, Xpel XR Black tint. and full coverage ceramic..."
+    }
+  ],
+  "questions": [
+  ],
+  "portfolio": [
+    {
+      "img": "/media/15.png",
+      "id": 1
+    },
+    {
+      "img": "/media/16.png",
+      "id": 2
+    },
+    {
+      "img": "/media/17.png",
+      "id": 3
+    },
+    {
+      "img": "/media/875.png",
+      "id": 4
+    },
+    {
+      "img": "/media/876.png",
+      "id": 5
+    },
+    {
+      "img": "/media/877.png",
+      "id": 6
+    },
+    {
+      "img": "/media/878.png",
+      "id": 7
+    },
+    {
+      "img": "/media/20.png",
+      "id": 8
+    }
+  ]
+}
