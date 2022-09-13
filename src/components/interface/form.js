@@ -13,7 +13,8 @@ export const Input = styled.input`
   height: 50px;
   border-bottom: 1px solid #E0E0E0;
   color: #828282;
-  background: #F2F2F2;
+  background-color: transparent;
+  margin-bottom: 20px;
 `
 
 export const ValidationError = styled.div`

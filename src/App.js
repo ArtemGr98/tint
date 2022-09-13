@@ -8,16 +8,18 @@ import Questions from "./components/Questions/Questions";
 import Portfolio from "./components/Portfolio/Portfolio";
 import About from "./components/About/About";
 import Partners from "./components/Partners/Partners";
+import Contact from "./components/Contact/Contact";
 
 function App() {
     return ( 
         <div className="App">
             <Header />
             <Routes>
-                <Route path="services" element={<Services />} />
+                <Route path="/" element={<Services />} />
                 <Route path="portfolio" element={<Portfolio />} />
                 <Route path="about" element={<About />} />
                 <Route path="partners" element={<Partners />} />
+                <Route path="contact" element={<Contact />} />
             </Routes>
             <GetStarted />
             <Questions />

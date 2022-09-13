@@ -7,6 +7,7 @@ import facebookLogo from "../../../img/common/social/Frame 44 (1).svg"
 import youtubeLogo from "../../../img/common/social/Frame 44 (2).svg"
 import instagramLogo from "../../../img/common/social/Frame 44 (3).svg"
 import Social from "../../common/Social/Social";
+import Connect from "../../common/Connect/Connect";
 
 const Looking = () => {
     return <>
@@ -66,13 +67,7 @@ const Looking = () => {
                 </ButtonBlue>
             </LookingColumn>
         </LookingTop>
-        <LookingBottom>
-            <Title color="white">
-                CONNECT WITH US!
-            </Title>
-            <Social twitterLogo={twitterLogo} facebookLogo={facebookLogo}
-                    youtubeLogo={youtubeLogo} instagramLogo={instagramLogo} />
-        </LookingBottom>
+        <Connect />
     </>
 }
 export default Looking
