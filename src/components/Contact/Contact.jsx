@@ -1,8 +1,8 @@
 import React from 'react';
 import Top from "../Top/Top";
 import slideImg from "../../img/Contact/IMG_0020 3.png"
-import Dealers from "../Services/Dealers/Dealers";
-import MiniPortfolio from "../Services/MiniPortfolio/MiniPortfolio";
+import Dealers from "../common/Dealers/Dealers";
+import MiniPortfolio from "../common/MiniPortfolio/MiniPortfolio";
 import Connect from "../common/Connect/Connect";
 import Reviews from "../Reviews/Reviews";
 import ContactForm from "./ContactForm";

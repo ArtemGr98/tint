@@ -1,6 +1,6 @@
 import slideImg from "../../img/About/IMG_0020 3.png";
 import Top from "../Top/Top";
-import MiniPortfolio from "../Services/MiniPortfolio/MiniPortfolio";
+import MiniPortfolio from "../common/MiniPortfolio/MiniPortfolio";
 import styled from "styled-components";
 import backgroundImg from '../../img/About/Rectangle 875.png'
 import {TextStn, Title2} from "../interface/Title";

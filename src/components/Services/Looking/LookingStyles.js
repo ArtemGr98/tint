@@ -6,7 +6,6 @@ export const LookingTop = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   padding: 50px;
-  margin-top: 100px;
 `
 export const LookingColumn = styled.div`
   width: 50%;
