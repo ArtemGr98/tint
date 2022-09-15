@@ -17,7 +17,7 @@ const PaginationItem = styled.span`
   color: ${props => (props.children === props.currentPage) ? "#016FD0" : "#000000" };
 `
 
-const Pagination = ({totalPages, setPortfolioImg}) => {
+const Pagination = ({totalPages, setPortfolioImgData}) => {
     const [currentPage, setCurrentPage] = useState(1)
     const pages = []
 
@@ -37,7 +37,7 @@ const Pagination = ({totalPages, setPortfolioImg}) => {
 
     const onChangePage = (page) => {
         setCurrentPage(page)
-        portfolioApi().then(response => setPortfolioImg(response.data))
+        portfolioApi().then(response => setPortfolioImgData(response.data))
     }
 
     return <PaginationWrapper>

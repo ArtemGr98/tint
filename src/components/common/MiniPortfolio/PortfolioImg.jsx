@@ -19,12 +19,12 @@ export const PortfolioImgCard = styled.a`
 
 `
 
-const PortfolioImg = ({portfolioImg}) => {
+const PortfolioImg = ({portfolioImgData}) => {
     return (
         <PortfolioImgContainer data-uk-lightbox>
-            {portfolioImg.map(imgObj => <PortfolioImgCard href={imgObj.img}>
-                <img src={imgObj.img} key={imgObj.id} alt="portfolioImg"/>
-            </PortfolioImgCard>)}
+            {portfolioImgData.map(imgObj => <PortfolioImgCard href={imgObj.image} key={imgObj.id}>
+                    <img src={imgObj.image} alt="portfolioImg"/>
+                </PortfolioImgCard> )}
         </PortfolioImgContainer>
     );
 };

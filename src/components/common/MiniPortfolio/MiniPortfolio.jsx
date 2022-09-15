@@ -6,11 +6,11 @@ import {useEffect, useState} from "react";
 import {portfolioApi} from "../../../api/instance";
 
 const MiniPortfolio = () => {
-    const [portfolioImg, setPortfolioImg] = useState([])
+    const [portfolioImgData, setPortfolioImgData] = useState([])
 
     useEffect(() => {
         portfolioApi().then(response => {
-            setPortfolioImg(response.data)
+            setPortfolioImgData(response.data)
         })
     }, [])
     return <>
@@ -20,7 +20,7 @@ const MiniPortfolio = () => {
         <MiniPortfolioText>
             Vinyl Wrapping, Window Tinting, Paint Protection Film and More for Automotive & Commercial
         </MiniPortfolioText>
-        <PortfolioImg portfolioImg={portfolioImg} />
+        <PortfolioImg portfolioImgData={portfolioImgData} />
     </>
 }
 export default MiniPortfolio
