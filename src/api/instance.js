@@ -1,10 +1,10 @@
 import axios from "axios";
 
 const instance = axios.create({
-    baseURL: 'http://localhost:3001/',
+    baseURL: 'http://127.0.0.1:8000/api/'
 })
 
-export const portfolioApi = () => instance.get(`/portfolio`)
+export const portfolioApi = () => instance.get(`/car_images`)
 
 export const questionsApi = data => instance.post('/questions', data)
 
