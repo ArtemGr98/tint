@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import {useState} from "react";
-import {portfolioApi} from "../../api/instance";
 
 const PaginationWrapper = styled.div`
     padding: 60px 0;
@@ -17,8 +15,8 @@ const PaginationItem = styled.span`
   color: ${props => (props.children === props.currentPage) ? "#016FD0" : "#000000" };
 `
 
-const Pagination = ({totalPages, setPortfolioImgData}) => {
-    const [currentPage, setCurrentPage] = useState(1)
+const Pagination = ({totalItem, setCurrentPage, currentPage}) => {
+    const totalPages = Math.ceil(totalItem / 2)
     const pages = []
 
     for (let i = 1; i <= totalPages; i++) {
@@ -37,7 +35,7 @@ const Pagination = ({totalPages, setPortfolioImgData}) => {
 
     const onChangePage = (page) => {
         setCurrentPage(page)
-        portfolioApi().then(response => setPortfolioImgData(response.data))
+        // portfolioApi().then(response => setPortfolioImgData(response.data))
     }
 
     return <PaginationWrapper>

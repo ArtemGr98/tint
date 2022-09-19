@@ -1,12 +1,7 @@
-import {LookingBottom, LookingColumn, LookingTop} from "./LookingStyles";
+import {LookingColumn, LookingTop} from "./LookingStyles";
 import backgroundImg from "../../../img/Services/Looking/Rectangle 16.png"
-import {TextStn, Title, Title2} from "../../interface/Title";
+import {TextStn, Title2} from "../../interface/Title";
 import {ButtonBlue} from "../../interface/Button";
-import twitterLogo from "../../../img/common/social/Frame 44.svg"
-import facebookLogo from "../../../img/common/social/Frame 44 (1).svg"
-import youtubeLogo from "../../../img/common/social/Frame 44 (2).svg"
-import instagramLogo from "../../../img/common/social/Frame 44 (3).svg"
-import Social from "../../common/Social/Social";
 import Connect from "../../common/Connect/Connect";
 
 const Looking = () => {

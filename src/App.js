@@ -1,31 +1,37 @@
 import './App.css';
 import Header from './components/Header/Header';
 import {Route, Routes} from "react-router-dom";
-import Services from "./components/Services/Services";
+import React from 'react';
 import Footer from "./components/Footer/Footer";
 import GetStarted from "./components/GetStarted/GetStarted";
 import Questions from "./components/Questions/Questions";
-import Portfolio from "./components/Portfolio/Portfolio";
-import About from "./components/About/About";
-import Partners from "./components/Partners/Partners";
-import Contact from "./components/Contact/Contact";
+import {QueryClientProvider} from "react-query";
+import {queryClient} from "./api/instance";
+
+const Services = React.lazy(() => import("./components/Services/Services"))
+const Portfolio = React.lazy(() => import("./components/Portfolio/Portfolio"))
+const About = React.lazy(() => import("./components/About/About"))
+const Partners = React.lazy(() => import("./components/Partners/Partners"))
+const Contact = React.lazy(() => import("./components/Contact/Contact"))
 
 function App() {
-    return ( 
+    return <QueryClientProvider client={queryClient}>
         <div className="App">
-            <Header />
-            <Routes>
-                <Route path="/" element={<Services />} />
-                <Route path="portfolio" element={<Portfolio />} />
-                <Route path="about" element={<About />} />
-                <Route path="partners" element={<Partners />} />
-                <Route path="contact" element={<Contact />} />
-            </Routes>
-            <GetStarted />
-            <Questions />
+            <Header/>
+            <React.Suspense fallback={<div>Loading...</div>}>
+                <Routes>
+                    <Route path="/" element={<Services/>}/>
+                    <Route path="portfolio" element={<Portfolio/>}/>
+                    <Route path="about" element={<About/>}/>
+                    <Route path="partners" element={<Partners/>}/>
+                    <Route path="contact" element={<Contact/>}/>
+                </Routes>
+            </React.Suspense>
+            <GetStarted/>
+            <Questions/>
             <Footer/>
         </div>
-    );
+    </QueryClientProvider>
 }
 
 export default App;

@@ -2,17 +2,13 @@ import {Title} from "../../interface/Title";
 import {MiniPortfolioText} from "./MiniPortfolioStyles";
 
 import PortfolioImg from "./PortfolioImg";
-import {useEffect, useState} from "react";
-import {portfolioApi} from "../../../api/instance";
+import usePortfolioImg from "../../../hook/usePortfolioImg";
 
 const MiniPortfolio = () => {
-    const [portfolioImgData, setPortfolioImgData] = useState([])
+    const {isLoading, data, error} = usePortfolioImg(1)
 
-    useEffect(() => {
-        portfolioApi().then(response => {
-            setPortfolioImgData(response.data)
-        })
-    }, [])
+    if (error) return <div>error</div>
+
     return <>
         <Title>
             Our Portfolio
@@ -20,7 +16,9 @@ const MiniPortfolio = () => {
         <MiniPortfolioText>
             Vinyl Wrapping, Window Tinting, Paint Protection Film and More for Automotive & Commercial
         </MiniPortfolioText>
-        <PortfolioImg portfolioImgData={portfolioImgData} />
+        {isLoading ? <div>Loader...</div> : data.data.length ?
+            <PortfolioImg portfolioImgData={data.data} /> : <div>the gallery is empty</div>
+        }
     </>
 }
 export default MiniPortfolio
