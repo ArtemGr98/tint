@@ -14,6 +14,23 @@ const Dealers = () => {
         </Title>
         <Swiper
             slidesPerView={4}
+            breakpoints={{
+                1200: {
+                    slidesPerView: 3.5,
+                },
+                900: {
+                    slidesPerView: 3,
+                },
+                800: {
+                    slidesPerView: 2.5
+                },
+                700: {
+                    slidesPerView: 2
+                },
+                300: {
+                    slidesPerView: 1.5
+                }
+            }}
         >
             <SwiperSlide>
                 <img src={slideImg1} alt=""/>

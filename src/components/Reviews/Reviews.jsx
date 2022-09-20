@@ -18,8 +18,18 @@ const Reviews = () => {
             Customer Reviews
         </Title>
         <Swiper
-            slidesPerView={3}
             spaceBetween={70}
+            breakpoints={{
+                1000: {
+                    slidesPerView: 3
+                },
+                500: {
+                    slidesPerView: 2
+                },
+                300: {
+                    slidesPerView: 1
+                }
+            }}
         >
             {reviewsData.map(review => {
                 return <SwiperSlide key={review.id}>

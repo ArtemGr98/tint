@@ -15,6 +15,9 @@ export const Input = styled.input`
   color: #828282;
   background-color: transparent;
   margin-bottom: 20px;
+  @media (max-width: 400px) {
+    width: 100%;
+  }
 `
 
 export const ValidationError = styled.div`

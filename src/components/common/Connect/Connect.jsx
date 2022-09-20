@@ -13,7 +13,16 @@ export const ConnectWrapper = styled.div`
   align-items: center;
   justify-content: center;
 
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+
   ${Title} {
+    @media (max-width: 1000px) {
+      margin-right: 0;
+      padding: 20px 0;
+    }
     margin-right: 50px;
   }
 `

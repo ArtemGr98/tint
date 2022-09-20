@@ -4,6 +4,9 @@ import {Flex} from "../interface/display";
 export const FooterFlex = styled(Flex)`
   justify-content: space-between;
   padding: 2% 5%;
+  @media (max-width: 1000px) {
+    flex-direction: column;
+  }
 `
 export const FooterColumn = styled.div`
   width: 33.3%;
@@ -12,6 +15,10 @@ export const FooterColumn = styled.div`
   text-align: start;
   //padding: 50px;
   height: auto;
+  @media (max-width: 1000px) {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 `
 export const FooterText = styled.div`
   font-weight: 500;
@@ -27,4 +34,7 @@ export const FooterPhone = styled.a`
 `
 export const MarginTop = styled.div`
   margin-top: 60px;
+  @media (max-width: 1000px) {
+    margin-top: 10px;
+  }
 `

@@ -2,7 +2,6 @@ import {ErrorMessage, Field, Form, Formik} from "formik";
 import {ButtonBlue} from "../interface/Button";
 import * as Yup from "yup";
 import {InputForm, ValidationError} from "../interface/form";
-import {Flex} from "../interface/display";
 import {QuestionsBtnText, QuestionsFlex} from "./QuestionsStyles";
 import {questionsApi} from "../../api/instance";
 
@@ -41,12 +40,12 @@ const QuestionsForm = () => {
                        <Field type="email" name="email" placeholder="Email *" component={InputForm}/>
                        <ErrorMessage name="email" component={ValidationError}/>
                    </div>
-                   <Flex>
+                   <QuestionsFlex>
                        <QuestionsBtnText>We provide loaner cars</QuestionsBtnText>
                        <ButtonBlue type="submit">
                            Book a loaner
                        </ButtonBlue>
-                   </Flex>
+                   </QuestionsFlex>
                </QuestionsFlex>
             </Form>)}
     </Formik>

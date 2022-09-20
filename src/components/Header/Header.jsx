@@ -4,6 +4,7 @@ import {
     HeaderTop,
     HeaderTopClose,
     HeaderTopText,
+    Menu,
     NavContainer,
     PhoneLink
 } from "./HeaderStyles"
@@ -18,9 +19,11 @@ const Header = () => {
     return <header>
         {isHeaderTop && <HeaderTop>
             <HeaderTopText>
-                In a respond of current situation with COVID-19 coronavirus,
-                we are treating each vehicle with alcohol solution outside,
-                and Ozone+UV air treatment machine inside.
+                <span>
+                    In a respond of current situation with COVID-19 coronavirus,
+                    we are treating each vehicle with alcohol solution outside,
+                    and Ozone+UV air treatment machine inside.
+                </span>
             </HeaderTopText>
             <HeaderTopClose onClick={() => setHeaderTopHidden(false)}>
                 ✖
@@ -30,6 +33,7 @@ const Header = () => {
             <div>
                 <img src={logo} alt="logo"/>
             </div>
+            <Menu>MENU</Menu>
             <NavContainer>
                 <HeaderLink to="/">services</HeaderLink>
                 <HeaderLink to="portfolio">Our Portfolio</HeaderLink>
