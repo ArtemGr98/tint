@@ -7,6 +7,9 @@ export const GetStartedContainer = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   padding: 150px 0;
+  @media (max-width: 600px) {
+    padding: 20px 0;
+  }
 `
 export const GetStartedBtn = styled(Flex)`
   justify-content: center;

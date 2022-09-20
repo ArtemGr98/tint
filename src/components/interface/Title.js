@@ -7,6 +7,10 @@ export const Title = styled.h1`
   text-transform: uppercase;
   color: ${props => props.color || "#000000"};
   padding: 50px 0;
+  @media (max-width: 600px) {
+    font-size: 24px;
+    padding: 20px 0;
+  }
   span {
     color: #016FD0;
   }
@@ -17,6 +21,9 @@ export const Title2 = styled.h1`
   line-height: 70px;
   text-transform: uppercase;
   color: #FFFFFF;
+  @media (max-width: 600px) {
+    font-size: 30px;
+  }
   span {
     color: #016FD0;
   }
@@ -27,4 +34,7 @@ export const TextStn = styled.div`
   line-height: 130%;
   color: #FFFFFF;
   text-align: start;
+  @media (max-width: 600px) {
+    font-size: 18px;
+  }
 `
