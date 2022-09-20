@@ -47,7 +47,7 @@ const Footer = () => {
                 </div>
             </FooterColumn>
             <FooterColumn>
-                <Link to="/services">
+                <Link to="/">
                     <FooterText>
                         Services
                     </FooterText>
@@ -60,7 +60,7 @@ const Footer = () => {
                         About Us
                     </FooterText>
                 </Link>
-                <Link to="portfolioApi">
+                <Link to="portfolio">
                     <FooterText>
                         Our Portfolio
                     </FooterText>

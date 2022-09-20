@@ -105,22 +105,12 @@ export const Menu = styled.div`
     display: block;
   }
 `
-// export const Hamburger = styled.div `
-//   @media (max-width: 1000px) {
-//       display: flex;
-//   }
+export const HeaderLogo = styled.img`
+  width: 76px;
+  height: 76px;
+  @media (max-width: 1000px) {
+    width: 50px;
+    height: 50px;
+  }
+`
 
-//   overflow: hidden;
-//   position: relative;
-//   width: 55px;
-//   height: 55px;
-//   background: #030E1E;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   margin-right: 20px;
-//   display: none;
-// `
-// export const HamburgerLine = styled.div`
-
-// `

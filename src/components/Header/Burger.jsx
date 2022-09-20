@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import { StyledBurger, StyledMenu } from "./BurgerStyles";
 
 const BurgerContainer = () => {
@@ -14,15 +15,21 @@ export default BurgerContainer
 const Menu = ({ open }) => {
     return (
       <StyledMenu open={open}>
-        <a href="/">
-          About us
-        </a>
-        <a href="/">
-          Pricing
-        </a>
-        <a href="/">
-          Contact
-        </a>
+        <NavLink to="/">
+            services
+        </NavLink>
+        <NavLink to="portfolio">
+            Our Portfolio
+        </NavLink>
+        <NavLink to="about">
+            About us
+        </NavLink>
+        <NavLink to="contact">
+            Contact
+        </NavLink>
+        <NavLink to="partners">
+            PARTNERS
+        </NavLink>
       </StyledMenu>
     )
 }

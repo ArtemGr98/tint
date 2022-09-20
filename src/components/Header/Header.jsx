@@ -2,13 +2,13 @@ import {
     HeaderBottom,
     HeaderContainer,
     HeaderLink,
+    HeaderLogo,
     HeaderTop,
     HeaderTopClose,
     HeaderTopText,
     Menu,
     NavContainer,
     PhoneLink,
-    StyledMenu
 } from "./HeaderStyles"
 import logo from '../../img/common/advanced_tint_logo_white 1.svg'
 import phone from '../../img/Header/bi_phone-vibrate-fill.svg'
@@ -34,7 +34,7 @@ const Header = () => {
         </HeaderTop>}
         <HeaderBottom>
             <div>
-                <img src={logo} alt="logo"/>
+                <HeaderLogo src={logo} alt="logo"/>
             </div>
             <MenuBurger />
             <Menu>MENU</Menu>
