@@ -1,6 +1,14 @@
 import styled, { keyframes } from "styled-components";
 import {NavLink} from "react-router-dom";
 
+export const HeaderContainer = styled.header`
+  position: fixed;
+  z-index: 1000;
+  background: #FFFFFF;
+  width: 100vw;
+`
+
+
 export const HeaderTop = styled.div`
   height: 32px;
   background: #282828;
@@ -97,3 +105,22 @@ export const Menu = styled.div`
     display: block;
   }
 `
+// export const Hamburger = styled.div `
+//   @media (max-width: 1000px) {
+//       display: flex;
+//   }
+
+//   overflow: hidden;
+//   position: relative;
+//   width: 55px;
+//   height: 55px;
+//   background: #030E1E;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   margin-right: 20px;
+//   display: none;
+// `
+// export const HamburgerLine = styled.div`
+
+// `

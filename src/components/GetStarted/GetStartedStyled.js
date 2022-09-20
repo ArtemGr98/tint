@@ -11,7 +11,15 @@ export const GetStartedContainer = styled.div`
 export const GetStartedBtn = styled(Flex)`
   justify-content: center;
 
+  @media (max-width: 1000px) {
+    flex-direction: column;
+  }
+
   a {
+    @media (max-width: 1000px) {
+      margin-right: 0px;
+      margin-bottom: 20px;
+    }
     margin-right: 20px;
   }
 `

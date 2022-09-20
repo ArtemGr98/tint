@@ -12,6 +12,9 @@ const ContactFormWrapper = styled.div`
   background-size: cover;
   width: 50%;
   padding: 50px;
+  @media (max-width: 1000px) {
+    width: 100%;
+    }
 `
 
 const ContactForm = () => {

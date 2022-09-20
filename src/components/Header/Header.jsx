@@ -1,22 +1,25 @@
 import {
     HeaderBottom,
+    HeaderContainer,
     HeaderLink,
     HeaderTop,
     HeaderTopClose,
     HeaderTopText,
     Menu,
     NavContainer,
-    PhoneLink
+    PhoneLink,
+    StyledMenu
 } from "./HeaderStyles"
 import logo from '../../img/common/advanced_tint_logo_white 1.svg'
 import phone from '../../img/Header/bi_phone-vibrate-fill.svg'
 import {ButtonBlue} from "../interface/Button";
 import {useState} from "react";
+import MenuBurger from "./Burger";
 
 const Header = () => {
     const [isHeaderTop, setHeaderTopHidden] = useState(true)
 
-    return <header>
+    return <HeaderContainer>
         {isHeaderTop && <HeaderTop>
             <HeaderTopText>
                 <span>
@@ -33,6 +36,7 @@ const Header = () => {
             <div>
                 <img src={logo} alt="logo"/>
             </div>
+            <MenuBurger />
             <Menu>MENU</Menu>
             <NavContainer>
                 <HeaderLink to="/">services</HeaderLink>
@@ -53,7 +57,7 @@ const Header = () => {
                 </ButtonBlue>
             </div>
         </HeaderBottom>
-    </header>
+    </HeaderContainer>
 }
 
 export default Header

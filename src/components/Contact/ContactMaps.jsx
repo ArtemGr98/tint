@@ -3,6 +3,9 @@ import styled from "styled-components";
 const ContactMapsContainer = styled.div`
   width: 50%;
   height: 705px;
+  @media screen {
+    width: 100%;
+  }
 `
 const ContactMaps = () => {
 

@@ -8,14 +8,22 @@ import Reviews from "../Reviews/Reviews";
 import ContactForm from "./ContactForm";
 import ContactMaps from "./ContactMaps";
 import {Flex} from "../interface/display";
+import styled from 'styled-components';
+
+const ContactFlex = styled(Flex)`
+    @media (max-width: 1000px) {
+        flex-direction: column;
+    }
+`
+
 
 const Contact = () => {
     return <>
         <Top slidesImg={[slideImg, slideImg]} />
-        <Flex>
+        <ContactFlex>
             <ContactForm />
             <ContactMaps />
-        </Flex>
+        </ContactFlex>
         <Dealers />
         <Connect />
         <Reviews />
