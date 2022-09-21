@@ -16,6 +16,10 @@ const PartnersContainer = styled.div`
     //width: 25%;
     margin-right: 40px;
     margin-bottom: 100px;
+    @media (max-width: 600px) {
+      margin-right: 0px;
+      margin-bottom: 50px;
+    }
   }
 `
 

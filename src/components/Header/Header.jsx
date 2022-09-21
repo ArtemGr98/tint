@@ -6,7 +6,6 @@ import {
     HeaderTop,
     HeaderTopClose,
     HeaderTopText,
-    Menu,
     NavContainer,
     PhoneLink,
 } from "./HeaderStyles"
@@ -36,8 +35,8 @@ const Header = () => {
             <div>
                 <HeaderLogo src={logo} alt="logo"/>
             </div>
-            <MenuBurger />
-            <Menu>MENU</Menu>
+            <MenuBurger isHeaderTop={isHeaderTop} />
+            {/* <Menu>MENU</Menu> */}
             <NavContainer>
                 <HeaderLink to="/">services</HeaderLink>
                 <HeaderLink to="portfolio">Our Portfolio</HeaderLink>

@@ -2,6 +2,10 @@ import styled from "styled-components";
 
 export const TopContainer = styled.div`
   position: relative;
+  padding-top: 108px;
+  @media (max-width: 1000px) {
+    padding-top: 82px;
+  }
 `
 export const SocialTop = styled.div`
   display: flex;
@@ -10,6 +14,9 @@ export const SocialTop = styled.div`
   top: 20%;
   right: 5%;
   z-index: 100;
+  @media (max-width: 600px) {
+    top: 35%;
+  }
 `
 export const SocialLink = styled.a`
   width: 61px;
@@ -20,4 +27,15 @@ export const SocialLink = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (max-width: 600px) {
+    width: 40px;
+    height: 40px;
+  }
+`
+export const SlideImg = styled.img`
+  width: 100vw;
+  min-height: 200px;
+  @media (max-width: 600px) {
+    object-fit: cover;
+  }
 `

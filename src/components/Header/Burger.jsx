@@ -1,20 +1,20 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { StyledBurger, StyledMenu } from "./BurgerStyles";
+import { BurgerContainerStyles, StyledBurger, StyledMenu } from "./BurgerStyles";
 
-const BurgerContainer = () => {
+const BurgerContainer = ({isHeaderTop}) => {
     const [open, setOpen] = React.useState(false);
-    return <div>
-        <Menu open={open} setOpen={setOpen} />
+    return <BurgerContainerStyles>
+        <Menu open={open} setOpen={setOpen} isHeaderTop={isHeaderTop} />
         <Burger open={open} setOpen={setOpen} />
-    </div>
+    </BurgerContainerStyles>
 }
 
 export default BurgerContainer
 
-const Menu = ({ open }) => {
+const Menu = ({ open, isHeaderTop, setOpen }) => {
     return (
-      <StyledMenu open={open}>
+      <StyledMenu open={open} isHeaderTop={isHeaderTop} onClick={() => setOpen(!open)}>
         <NavLink to="/">
             services
         </NavLink>

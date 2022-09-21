@@ -8,7 +8,7 @@ export const StyledMenu = styled.nav`
   height: 100vh;
   text-align: left;
   position: fixed;
-  top: 108px;
+  top: ${({isHeaderTop}) => isHeaderTop ? '82px' : '50px' };
   left: 0;
   transition: transform 0.3s ease-in-out;
   z-index: 1000;
@@ -73,5 +73,11 @@ export const StyledBurger = styled.button`
     :nth-child(3) {
       transform: ${({ open }) => open ? 'rotate(-45deg)' : 'rotate(0)'};
     }
+  }
+`
+export const BurgerContainerStyles = styled.div`
+  display: none;
+  @media (max-width: 1000px) {
+    display: block;
   }
 `

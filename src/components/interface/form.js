@@ -16,7 +16,7 @@ export const Input = styled.input`
   background-color: transparent;
   margin-bottom: 20px;
   @media (max-width: 400px) {
-    width: 100%;
+    width: 90vw;
   }
 `
 

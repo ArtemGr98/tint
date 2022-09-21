@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Title } from "../../interface/Title";
 
 export const ServiceContainer = styled.div`
   display: flex;
@@ -7,12 +8,12 @@ export const ServiceContainer = styled.div`
   width: 100%;
 `
 export const ServiceHover = styled.div`
-  //display: none;
-  opacity: 0;
-  transition: all 1s;
-  position: relative;
-  bottom: -300px;
-  z-index: -1;
+  display: none;
+  /* opacity: 0;
+  transition: all 1s; */
+  /* position: relative; */
+  /* bottom: -300px; */
+  /* z-index: -1; */
 `
 export const ColumnContainer = styled.div`
     display: flex;
@@ -24,15 +25,27 @@ export const Service = styled.div`
   background-image: url("${props => props.backgroundImg}");
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
   &:hover {
     ${ServiceHover} {
-      //display: block;
-      opacity: 1;
-      bottom: 0;
-      z-index: 1;
+      display: block;
+      /* opacity: 1; */
+      /* bottom: 0; */
+      /* z-index: 1; */
     }
   }
+  ${Title} {
+    @media (max-width: 600px) {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+
 `
 export const ServiceColumn = styled.div`
   width: 33%;

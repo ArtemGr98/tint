@@ -156,11 +156,11 @@ const AutoServices = () => {
                 </Title>
             </Service>
         </ServiceContainer>
-        <ServiceBtn>
+        {/* <ServiceBtn>
             <ButtonWhite>
                 MOre servises
             </ButtonWhite>
-        </ServiceBtn>
+        </ServiceBtn> */}
     </>
 }
 export default AutoServices
