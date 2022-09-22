@@ -13,8 +13,12 @@ import serviceBg2 from '../../../img/Services/AutoServices/Rectangle 869.png'
 import serviceBg3 from '../../../img/Services/AutoServices/Rectangle 870.png'
 import serviceBg4 from '../../../img/Services/AutoServices/Rectangle 871.png'
 import {ButtonBlue, ButtonWhite} from "../../interface/Button";
+import { useContext } from "react";
+import { ModalContext } from "../../../App";
 
 const AutoServices = () => {
+    const {setModalOpen} = useContext(ModalContext)
+
     return <>
         <Title>
             AUTO SERVICES
@@ -133,7 +137,7 @@ const AutoServices = () => {
                         </ServiceColumn>
                     </ColumnContainer>
                     <ServiceBtn>
-                        <ButtonBlue>
+                        <ButtonBlue onClick={() => setModalOpen(true)}>
                             order
                         </ButtonBlue>
                     </ServiceBtn>

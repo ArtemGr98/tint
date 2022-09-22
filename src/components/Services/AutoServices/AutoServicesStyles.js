@@ -16,7 +16,10 @@ export const ServiceHover = styled.div`
   /* z-index: -1; */
 `
 export const ColumnContainer = styled.div`
-    display: flex;
+  display: flex;
+  @media (max-width: 1000px) {
+    display: none;
+  }
 `
 export const Service = styled.div`
   width: calc(50% - 10px);
@@ -49,7 +52,8 @@ export const Service = styled.div`
 `
 export const ServiceColumn = styled.div`
   width: 33%;
-  max-height: 500px;
+  max-height: 60%;
+  max-height: 30vw;
   overflow-y: auto;
   //position: relative;
 `
