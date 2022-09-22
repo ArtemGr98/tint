@@ -12,11 +12,14 @@ import {
 import logo from '../../img/common/advanced_tint_logo_white 1.svg'
 import phone from '../../img/Header/bi_phone-vibrate-fill.svg'
 import {ButtonBlue} from "../interface/Button";
-import {useState} from "react";
+import {useContext, useState} from "react";
 import MenuBurger from "./Burger";
+import { Link } from "react-router-dom";
+import { ModalContext } from "../../App";
 
 const Header = () => {
     const [isHeaderTop, setHeaderTopHidden] = useState(true)
+    const {setModalOpen} = useContext(ModalContext)
 
     return <HeaderContainer>
         {isHeaderTop && <HeaderTop>
@@ -32,9 +35,9 @@ const Header = () => {
             </HeaderTopClose>
         </HeaderTop>}
         <HeaderBottom>
-            <div>
+            <Link to='/'>
                 <HeaderLogo src={logo} alt="logo"/>
-            </div>
+            </Link>
             <MenuBurger isHeaderTop={isHeaderTop} />
             {/* <Menu>MENU</Menu> */}
             <NavContainer>
@@ -51,7 +54,7 @@ const Header = () => {
                 </PhoneLink>
             </div>
             <div>
-                <ButtonBlue>
+                <ButtonBlue onClick={() => setModalOpen(true)}>
                     Get EStimete
                 </ButtonBlue>
             </div>

@@ -7,11 +7,11 @@ import {reviewsApi} from "../../api/instance";
 
 const Reviews = () => {
     const [reviewsData, setReviewsData] = useState([])
-    useEffect(() => {
-        reviewsApi().then(response => {
-            setReviewsData(response.data)
-        })
-    }, [])
+    // useEffect(() => {
+    //     reviewsApi().then(response => {
+    //         setReviewsData(response.data)
+    //     })
+    // }, [])
 
     return <ReviewsContainer backgroundImg={backgroundImg}>
         <Title>

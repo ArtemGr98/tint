@@ -16,7 +16,7 @@ const PaginationItem = styled.span`
 `
 
 const Pagination = ({totalItem, setCurrentPage, currentPage}) => {
-    const totalPages = Math.ceil(totalItem / 2)
+    const totalPages = Math.ceil(totalItem / 6)
     const pages = []
 
     for (let i = 1; i <= totalPages; i++) {

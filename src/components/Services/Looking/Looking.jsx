@@ -3,8 +3,12 @@ import backgroundImg from "../../../img/Services/Looking/Rectangle 16.png"
 import {TextStn, Title2} from "../../interface/Title";
 import {ButtonBlue} from "../../interface/Button";
 import Connect from "../../common/Connect/Connect";
+import { useContext } from "react";
+import { ModalContext } from "../../../App";
 
 const Looking = () => {
+    const {setModalOpen} = useContext(ModalContext)
+
     return <>
         <LookingTop backgroundImg={backgroundImg}>
             <LookingColumn>
@@ -18,7 +22,7 @@ const Looking = () => {
                     With Advanced Tint, you’ll get professional and high-quality custom car window tinting
                     that meets your needs and requirements quickly and reasonably priced.
                 </TextStn>
-                <ButtonBlue>
+                <ButtonBlue onClick={() => setModalOpen(true)}>
                     Get EStimete
                 </ButtonBlue>
             </LookingColumn>
@@ -57,7 +61,7 @@ const Looking = () => {
                         </li>
                     </ul>
                 </TextStn>
-                <ButtonBlue>
+                <ButtonBlue onClick={() => setModalOpen(true)}>
                     order service
                 </ButtonBlue>
             </LookingColumn>

@@ -16,8 +16,8 @@ const MiniPortfolio = () => {
         <MiniPortfolioText>
             Vinyl Wrapping, Window Tinting, Paint Protection Film and More for Automotive & Commercial
         </MiniPortfolioText>
-        {isLoading ? <div>Loader...</div> : data.data.length ?
-            <PortfolioImg portfolioImgData={data.data} /> : <div>the gallery is empty</div>
+        {isLoading ? <div>Loader...</div> : data.data.count ?
+            <PortfolioImg portfolioImgData={data.data.results} /> : <div>the gallery is empty</div>
         }
     </>
 }
