@@ -9,6 +9,7 @@ import {QueryClientProvider} from "react-query";
 import {queryClient} from "./api/instance";
 import { useState } from 'react';
 import Modal from './components/common/Modal/Modal';
+import Loader from './components/common/Loader/Loader';
 
 const Services = React.lazy(() => import("./components/Services/Services"))
 const Portfolio = React.lazy(() => import("./components/Portfolio/Portfolio"))
@@ -25,7 +26,7 @@ function App() {
         <ModalContext.Provider value={{setModalOpen}}>
             <div className="App">
                 <Header/>
-                <React.Suspense fallback={<div>Loading...</div>}>
+                <React.Suspense fallback={<Loader />}>
                     <Routes>
                         <Route path="/" element={<Services/>}/>
                         <Route path="portfolio" element={<Portfolio/>}/>

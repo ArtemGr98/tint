@@ -4,8 +4,10 @@ import slideImg from "../../img/Portfolio/IMG_0020 3.png"
 import {useState} from "react";
 import Pagination from "../common/Pagination/Pagination";
 import PortfolioImg from "../common/MiniPortfolio/PortfolioImg";
-import usePortfolioImg from "../../hook/usePortfolioImg";
 import styled from "styled-components";
+import Loader from "../common/Loader/Loader";
+import { useGetPortfolioImg } from "../../hooks/queryHooks";
+import ErrorMessage from "../common/ErrorMessage/ErrorMessage";
 
 const InframeContaner = styled.div`
     width: 100vw;
@@ -18,23 +20,25 @@ const InframeContaner = styled.div`
 const Portfolio = () => {
 
     const [currentPage, setCurrentPage] = useState(1)
-    const {isLoading, data, error} = usePortfolioImg(currentPage)
-    
-    if (isLoading) return <div>loading...</div>
-
-    if (error) return <div>Error</div>
+    const {isLoading, isError, data, error} = useGetPortfolioImg(currentPage)
 
     return <>
         <Top slidesImg={[slideImg, slideImg]} />
         <InframeContaner>
             <iframe 
                 width="100%" height="100%" src="https://www.youtube.com/embed/94871Tqk8NM" 
-                title="YouTube video player" frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                title="YouTube video player" frameBorder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
             </iframe>
         </InframeContaner>
-        <PortfolioImg portfolioImgData={data.data.results} />
-        <Pagination totalItem={data.data.count} setCurrentPage={setCurrentPage} currentPage={currentPage}/>
+        {
+            isLoading ? <Loader /> : 
+            isError ? <ErrorMessage error={error.message} /> :
+            data.data.count ? <>
+                <PortfolioImg portfolioImgData={data.data.results} />
+                <Pagination totalItem={data.data.count} setCurrentPage={setCurrentPage} currentPage={currentPage}/>
+            </> : <div>the gallery is empty</div>
+        }
     </>
 }
 export default Portfolio

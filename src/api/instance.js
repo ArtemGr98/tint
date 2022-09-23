@@ -15,8 +15,8 @@ export const queryClient = new QueryClient({
     }
 })
 
-export const portfolioApi = (page) => instance.get(`/car_images?page=${page}`)
+export const getPortfolioImg = (page) => instance.get(`/car_images?page=${page}`)
 
 export const questionsApi = data => instance.post('/contact/', data)
 
-export const reviewsApi = () => instance.get(`/reviews/`)
+export const getReviews = () => instance.get(`http://localhost:3001/reviews/`)
