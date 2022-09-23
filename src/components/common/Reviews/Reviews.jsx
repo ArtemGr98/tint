@@ -2,7 +2,7 @@ import {useEffect, useState} from "react";
 import {ReviewsContainer, ReviewsText, ReviewsTop} from "./ReviewsStyles";
 import {Title} from "../../interface/Title";
 import {Swiper, SwiperSlide} from "swiper/react";
-import backgroundImg from "../../../img/Reviews/Rectangle 874.png"
+import backgroundImg from "../../../img/common/Reviews/Rectangle 874.png"
 import {reviewsApi} from "../../../api/instance";
 
 const Reviews = () => {

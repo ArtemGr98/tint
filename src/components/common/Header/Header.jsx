@@ -10,7 +10,7 @@ import {
     PhoneLink,
 } from "./HeaderStyles"
 import logo from '../../../img/common/advanced_tint_logo_white 1.svg'
-import phone from '../../../img/Header/bi_phone-vibrate-fill.svg'
+import phone from '../../../img/common/Header/bi_phone-vibrate-fill.svg'
 import {ButtonBlue} from "../../interface/Button";
 import {useContext, useState} from "react";
 import MenuBurger from "./Burger";

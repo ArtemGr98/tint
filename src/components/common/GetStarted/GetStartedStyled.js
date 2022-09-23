@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import backgroundImg from "../../../img/GetStarted/Rectangle 879.png"
+import backgroundImg from "../../../img/common/GetStarted/Rectangle 879.png"
 import {Flex} from "../../interface/display";
 
 export const GetStartedContainer = styled.div`
