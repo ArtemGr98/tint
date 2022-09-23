@@ -7,7 +7,7 @@ import slideImg3 from "../../../img/Partners/Frame (2).png"
 import slideImg4 from "../../../img/Partners/image 2.png"
 import {DealersContainer} from "./DealersStyle";
 
-const Dealers = () => {
+const PartnersSlider = () => {
     return <DealersContainer>
         <Title>
             Other Authorized Dealer's
@@ -34,6 +34,7 @@ const Dealers = () => {
         >
             <SwiperSlide>
                 <img src={slideImg1} alt=""/>
+
             </SwiperSlide>
             <SwiperSlide>
                 <img src={slideImg2} alt=""/>
@@ -50,4 +51,4 @@ const Dealers = () => {
         </Swiper>
     </DealersContainer>
 }
-export default Dealers
+export default PartnersSlider

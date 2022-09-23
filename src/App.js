@@ -1,10 +1,10 @@
 import './App.css';
-import Header from './components/Header/Header';
+import Header from './components/common/Header/Header';
 import {Route, Routes} from "react-router-dom";
 import React from 'react';
-import Footer from "./components/Footer/Footer";
-import GetStarted from "./components/GetStarted/GetStarted";
-import Questions from "./components/Questions/Questions";
+import Footer from "./components/common/Footer/Footer";
+import GetStarted from "./components/common/GetStarted/GetStarted";
+import Questions from "./components/common/Questions/Questions";
 import {QueryClientProvider} from "react-query";
 import {queryClient} from "./api/instance";
 import { useState } from 'react';

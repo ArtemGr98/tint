@@ -1,8 +1,8 @@
 import {GetStartedBtn, GetStartedContainer} from "./GetStartedStyled";
-import {Title2} from "../interface/Title";
-import {ButtonBlack, ButtonBlue} from "../interface/Button";
+import {Title2} from "../../interface/Title";
+import {ButtonBlack, ButtonBlue} from "../../interface/Button";
 import { useContext } from "react";
-import { ModalContext } from "../../App";
+import { ModalContext } from "../../../App";
 
 const GetStarted = () => {
     const {setModalOpen} = useContext(ModalContext)

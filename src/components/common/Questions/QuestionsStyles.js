@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {Flex} from "../interface/display";
+import {Flex} from "../../interface/display";
 
 export const QuestionsBtnText = styled.div`
   font-weight: 600;

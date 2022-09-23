@@ -1,10 +1,10 @@
 import {FooterColumn, FooterFlex, FooterPhone, FooterText, MarginTop} from "./FooterStyles";
-import Social from "../common/Social/Social";
-import img1 from "../../img/common/social/footer/1.svg"
-import img2 from "../../img/common/social/footer/2.svg"
-import img3 from "../../img/common/social/footer/3.svg"
-import img4 from "../../img/common/social/footer/4.svg"
-import logo from "../../img/common/sw-logo 1.svg"
+import Social from "../Social/Social";
+import img1 from "../../../img/common/social/footer/1.svg"
+import img2 from "../../../img/common/social/footer/2.svg"
+import img3 from "../../../img/common/social/footer/3.svg"
+import img4 from "../../../img/common/social/footer/4.svg"
+import logo from "../../../img/common/sw-logo 1.svg"
 import {Link} from "react-router-dom";
 
 const Footer = () => {

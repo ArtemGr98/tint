@@ -1,9 +1,9 @@
 import {ErrorMessage, Field, Form, Formik} from "formik";
-import {ButtonBlue} from "../interface/Button";
+import {ButtonBlue} from "../../interface/Button";
 import * as Yup from "yup";
-import {InputForm, ValidationError} from "../interface/form";
+import {InputForm, ValidationError} from "../../interface/form";
 import {QuestionsBtnText, QuestionsFlex} from "./QuestionsStyles";
-import {questionsApi} from "../../api/instance";
+import {questionsApi} from "../../../api/instance";
 
 const QuestionsForm = () => {
     return <Formik

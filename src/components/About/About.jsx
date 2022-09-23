@@ -1,5 +1,5 @@
 import slideImg from "../../img/About/IMG_0020 3.png";
-import Top from "../Top/Top";
+import Top from "../common/Top/Top";
 import MiniPortfolio from "../common/MiniPortfolio/MiniPortfolio";
 import styled from "styled-components";
 import backgroundImg from '../../img/About/Rectangle 875.png'

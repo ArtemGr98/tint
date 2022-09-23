@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {Flex} from "../interface/display";
+import {Flex} from "../../interface/display";
 
 export const FooterFlex = styled(Flex)`
   justify-content: space-between;

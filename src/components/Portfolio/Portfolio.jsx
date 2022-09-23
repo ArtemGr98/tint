@@ -1,8 +1,8 @@
-import Top from "../Top/Top";
+import Top from "../common/Top/Top";
 import slideImg from "../../img/Portfolio/IMG_0020 3.png"
 
 import {useState} from "react";
-import Pagination from "../Pagination/Pagination";
+import Pagination from "../common/Pagination/Pagination";
 import PortfolioImg from "../common/MiniPortfolio/PortfolioImg";
 import usePortfolioImg from "../../hook/usePortfolioImg";
 import styled from "styled-components";

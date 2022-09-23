@@ -1,4 +1,4 @@
-import Top from "../Top/Top";
+import Top from "../common/Top/Top";
 import slideImg from "../../img/Partners/IMG_0020 3.png"
 import styled from "styled-components";
 import slideImg1 from "../../img/Partners/Frame.png"

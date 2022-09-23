@@ -12,7 +12,7 @@ import serviceBg1 from '../../../img/Services/AutoServices/Rectangle 868.png'
 import serviceBg2 from '../../../img/Services/AutoServices/Rectangle 869.png'
 import serviceBg3 from '../../../img/Services/AutoServices/Rectangle 870.png'
 import serviceBg4 from '../../../img/Services/AutoServices/Rectangle 871.png'
-import {ButtonBlue, ButtonWhite} from "../../interface/Button";
+import {ButtonBlue} from "../../interface/Button";
 import { useContext } from "react";
 import { ModalContext } from "../../../App";
 

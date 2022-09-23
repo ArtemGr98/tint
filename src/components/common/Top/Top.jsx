@@ -3,10 +3,10 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import {Pagination} from "swiper";
 import {SlideImg, SocialLink, SocialTop, TopContainer} from "./TopStyles";
-import twitterLogo from "../../img/common/social/Frame 44.svg"
-import facebookLogo from "../../img/common/social/Frame 44 (1).svg"
-import youtubeLogo from "../../img/common/social/Frame 44 (2).svg"
-import instagramLogo from "../../img/common/social/Frame 44 (3).svg"
+import twitterLogo from "../../../img/common/social/Frame 44.svg"
+import facebookLogo from "../../../img/common/social/Frame 44 (1).svg"
+import youtubeLogo from "../../../img/common/social/Frame 44 (2).svg"
+import instagramLogo from "../../../img/common/social/Frame 44 (3).svg"
 
 const Top = ({slidesImg}) => {
     return (

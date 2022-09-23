@@ -1,4 +1,4 @@
-import {Title} from "../interface/Title";
+import {Title} from "../../interface/Title";
 import QuestionsForm from "./QuestionsForm";
 import {QuestionsFlex} from "./QuestionsStyles";
 
