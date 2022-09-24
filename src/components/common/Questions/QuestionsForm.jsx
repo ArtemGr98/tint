@@ -3,9 +3,11 @@ import {ButtonBlue} from "../../interface/Button";
 import * as Yup from "yup";
 import {InputForm, ValidationError} from "../../interface/form";
 import {QuestionsBtnText, QuestionsFlex} from "./QuestionsStyles";
-import {questionsApi} from "../../../api/instance";
+import {sendQuestions} from "../../../api/instance";
+import { useSendQuestions } from "../../../hooks/queryHooks";
 
 const QuestionsForm = () => {
+    const {mutateAsync} = useSendQuestions()
     return <Formik
         initialValues={{
             name: '',
@@ -19,7 +21,8 @@ const QuestionsForm = () => {
                 .required("Required"),
         })}
         onSubmit={(values, actions) => {
-            questionsApi(values).then(data => console.log(data))
+            // sendQuestions(values).then(data => console.log(data))
+            mutateAsync(values)
             actions.resetForm()
         }}
     >

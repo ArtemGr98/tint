@@ -147,17 +147,359 @@ const AutoServices = () => {
                 <Title color="white">
                     Paint Protection
                 </Title>
+                <ServiceHover>
+                    <ColumnContainer>
+                        <ServiceColumn>
+                            <ServiceColumnTitle>
+                                XPEL CS
+                            </ServiceColumnTitle>
+                            <ul>
+                                <ServiceLi>
+                                    UP TO 98%
+                                </ServiceLi>
+                                <ServiceLi>
+                                    EAT REJECTION
+                                </ServiceLi>
+                                <ServiceLi>
+                                    MULTI-LAYER
+                                </ServiceLi>
+                                <ServiceLi>
+                                    NANO-CERAMIC
+                                </ServiceLi>
+                                <ServiceLi>
+                                    PARTICLE TECHNOLOGY
+                                </ServiceLi>
+                                <ServiceLi>
+                                    99% UVA & UVB RAY PROTECTION
+                                </ServiceLi>
+                                <ServiceLi>
+                                    CRYSTAL CLEAR GPS, BLUETOOTH & RADIO
+                                </ServiceLi>
+                                <ServiceLi>
+                                    COMMUNICATION
+                                </ServiceLi>
+                                <ServiceLi>
+                                    TRANSFERABLE
+                                </ServiceLi>
+                                <ServiceLi>
+                                    LIFETIME WARRANTY
+                                </ServiceLi>
+                            </ul>
+                            <ServicePrice>
+                                150 $
+                            </ServicePrice>
+                        </ServiceColumn>
+                        <ServiceColumn>
+                            <ServiceColumnTitle>
+                                XPEL XR
+                            </ServiceColumnTitle>
+                            <ul>
+                                <ServiceLi>
+                                    GLARE REDUCTION & PRIVACY
+                                </ServiceLi>
+                                <ServiceLi>
+                                    WILL NOT
+                                </ServiceLi>
+                                <ServiceLi>
+                                    TURN PURPLE
+                                </ServiceLi>
+                                <ServiceLi>
+                                    99% UVA & UVB RAY PROTECTION
+                                </ServiceLi>
+                                <ServiceLi>
+                                    GPS AND RADIO-FRIENDLY
+                                </ServiceLi>
+                                <ServiceLi>
+                                    TRANSFERABLE LIFETIME WARRANTY
+                                </ServiceLi>
+                            </ul>
+                            <ServicePrice>
+                                150 $
+                            </ServicePrice>
+                        </ServiceColumn>
+                        <ServiceColumn>
+                            <ServiceColumnTitle>
+                                XPEL XR+
+                            </ServiceColumnTitle>
+                            <ul>
+                                <ServiceLi>
+                                    UP TO 98% HEAT REJECTION
+                                </ServiceLi>
+                                <ServiceLi>
+                                    NANO-CERAMIC
+                                </ServiceLi>
+                                <ServiceLi>
+                                    PARTICLE TECHNOLOGY
+                                </ServiceLi>
+                                <ServiceLi>
+                                    99% UVA & UVB RAY
+                                </ServiceLi>
+                                <ServiceLi>
+                                    PROTECTION
+                                </ServiceLi>
+                                <ServiceLi>
+                                    GPS AND
+                                </ServiceLi>
+                                <ServiceLi>
+                                    RADIO FRIENDLY
+                                </ServiceLi>
+                                <ServiceLi>
+                                    TRANSFERABLE
+                                </ServiceLi>
+                                <ServiceLi>
+                                    LIFETIME WARRANTY
+                                </ServiceLi>
+                            </ul>
+                            <ServicePrice>
+                                150 $
+                            </ServicePrice>
+                        </ServiceColumn>
+                    </ColumnContainer>
+                    <ServiceBtn>
+                        <ButtonBlue onClick={() => setModalOpen(true)}>
+                            order
+                        </ButtonBlue>
+                    </ServiceBtn>
+                </ServiceHover>
             </Service>
             <Service backgroundImg={serviceBg3}>
                 <Title color="white">
                     COMMERCIAL RESIDENTIAL
                     WINDOW TINT
                 </Title>
+                <ServiceHover>
+                    <ColumnContainer>
+                        <ServiceColumn>
+                            <ServiceColumnTitle>
+                                XPEL CS
+                            </ServiceColumnTitle>
+                            <ul>
+                                <ServiceLi>
+                                    UP TO 98%
+                                </ServiceLi>
+                                <ServiceLi>
+                                    EAT REJECTION
+                                </ServiceLi>
+                                <ServiceLi>
+                                    MULTI-LAYER
+                                </ServiceLi>
+                                <ServiceLi>
+                                    NANO-CERAMIC
+                                </ServiceLi>
+                                <ServiceLi>
+                                    PARTICLE TECHNOLOGY
+                                </ServiceLi>
+                                <ServiceLi>
+                                    99% UVA & UVB RAY PROTECTION
+                                </ServiceLi>
+                                <ServiceLi>
+                                    CRYSTAL CLEAR GPS, BLUETOOTH & RADIO
+                                </ServiceLi>
+                                <ServiceLi>
+                                    COMMUNICATION
+                                </ServiceLi>
+                                <ServiceLi>
+                                    TRANSFERABLE
+                                </ServiceLi>
+                                <ServiceLi>
+                                    LIFETIME WARRANTY
+                                </ServiceLi>
+                            </ul>
+                            <ServicePrice>
+                                150 $
+                            </ServicePrice>
+                        </ServiceColumn>
+                        <ServiceColumn>
+                            <ServiceColumnTitle>
+                                XPEL XR
+                            </ServiceColumnTitle>
+                            <ul>
+                                <ServiceLi>
+                                    GLARE REDUCTION & PRIVACY
+                                </ServiceLi>
+                                <ServiceLi>
+                                    WILL NOT
+                                </ServiceLi>
+                                <ServiceLi>
+                                    TURN PURPLE
+                                </ServiceLi>
+                                <ServiceLi>
+                                    99% UVA & UVB RAY PROTECTION
+                                </ServiceLi>
+                                <ServiceLi>
+                                    GPS AND RADIO-FRIENDLY
+                                </ServiceLi>
+                                <ServiceLi>
+                                    TRANSFERABLE LIFETIME WARRANTY
+                                </ServiceLi>
+                            </ul>
+                            <ServicePrice>
+                                150 $
+                            </ServicePrice>
+                        </ServiceColumn>
+                        <ServiceColumn>
+                            <ServiceColumnTitle>
+                                XPEL XR+
+                            </ServiceColumnTitle>
+                            <ul>
+                                <ServiceLi>
+                                    UP TO 98% HEAT REJECTION
+                                </ServiceLi>
+                                <ServiceLi>
+                                    NANO-CERAMIC
+                                </ServiceLi>
+                                <ServiceLi>
+                                    PARTICLE TECHNOLOGY
+                                </ServiceLi>
+                                <ServiceLi>
+                                    99% UVA & UVB RAY
+                                </ServiceLi>
+                                <ServiceLi>
+                                    PROTECTION
+                                </ServiceLi>
+                                <ServiceLi>
+                                    GPS AND
+                                </ServiceLi>
+                                <ServiceLi>
+                                    RADIO FRIENDLY
+                                </ServiceLi>
+                                <ServiceLi>
+                                    TRANSFERABLE
+                                </ServiceLi>
+                                <ServiceLi>
+                                    LIFETIME WARRANTY
+                                </ServiceLi>
+                            </ul>
+                            <ServicePrice>
+                                150 $
+                            </ServicePrice>
+                        </ServiceColumn>
+                    </ColumnContainer>
+                    <ServiceBtn>
+                        <ButtonBlue onClick={() => setModalOpen(true)}>
+                            order
+                        </ButtonBlue>
+                    </ServiceBtn>
+                </ServiceHover>
             </Service>
             <Service backgroundImg={serviceBg4}>
                 <Title color="white">
                     Rock CHIP REPAIR
                 </Title>
+                <ServiceHover>
+                    <ColumnContainer>
+                        <ServiceColumn>
+                            <ServiceColumnTitle>
+                                XPEL CS
+                            </ServiceColumnTitle>
+                            <ul>
+                                <ServiceLi>
+                                    UP TO 98%
+                                </ServiceLi>
+                                <ServiceLi>
+                                    EAT REJECTION
+                                </ServiceLi>
+                                <ServiceLi>
+                                    MULTI-LAYER
+                                </ServiceLi>
+                                <ServiceLi>
+                                    NANO-CERAMIC
+                                </ServiceLi>
+                                <ServiceLi>
+                                    PARTICLE TECHNOLOGY
+                                </ServiceLi>
+                                <ServiceLi>
+                                    99% UVA & UVB RAY PROTECTION
+                                </ServiceLi>
+                                <ServiceLi>
+                                    CRYSTAL CLEAR GPS, BLUETOOTH & RADIO
+                                </ServiceLi>
+                                <ServiceLi>
+                                    COMMUNICATION
+                                </ServiceLi>
+                                <ServiceLi>
+                                    TRANSFERABLE
+                                </ServiceLi>
+                                <ServiceLi>
+                                    LIFETIME WARRANTY
+                                </ServiceLi>
+                            </ul>
+                            <ServicePrice>
+                                150 $
+                            </ServicePrice>
+                        </ServiceColumn>
+                        <ServiceColumn>
+                            <ServiceColumnTitle>
+                                XPEL XR
+                            </ServiceColumnTitle>
+                            <ul>
+                                <ServiceLi>
+                                    GLARE REDUCTION & PRIVACY
+                                </ServiceLi>
+                                <ServiceLi>
+                                    WILL NOT
+                                </ServiceLi>
+                                <ServiceLi>
+                                    TURN PURPLE
+                                </ServiceLi>
+                                <ServiceLi>
+                                    99% UVA & UVB RAY PROTECTION
+                                </ServiceLi>
+                                <ServiceLi>
+                                    GPS AND RADIO-FRIENDLY
+                                </ServiceLi>
+                                <ServiceLi>
+                                    TRANSFERABLE LIFETIME WARRANTY
+                                </ServiceLi>
+                            </ul>
+                            <ServicePrice>
+                                150 $
+                            </ServicePrice>
+                        </ServiceColumn>
+                        <ServiceColumn>
+                            <ServiceColumnTitle>
+                                XPEL XR+
+                            </ServiceColumnTitle>
+                            <ul>
+                                <ServiceLi>
+                                    UP TO 98% HEAT REJECTION
+                                </ServiceLi>
+                                <ServiceLi>
+                                    NANO-CERAMIC
+                                </ServiceLi>
+                                <ServiceLi>
+                                    PARTICLE TECHNOLOGY
+                                </ServiceLi>
+                                <ServiceLi>
+                                    99% UVA & UVB RAY
+                                </ServiceLi>
+                                <ServiceLi>
+                                    PROTECTION
+                                </ServiceLi>
+                                <ServiceLi>
+                                    GPS AND
+                                </ServiceLi>
+                                <ServiceLi>
+                                    RADIO FRIENDLY
+                                </ServiceLi>
+                                <ServiceLi>
+                                    TRANSFERABLE
+                                </ServiceLi>
+                                <ServiceLi>
+                                    LIFETIME WARRANTY
+                                </ServiceLi>
+                            </ul>
+                            <ServicePrice>
+                                150 $
+                            </ServicePrice>
+                        </ServiceColumn>
+                    </ColumnContainer>
+                    <ServiceBtn>
+                        <ButtonBlue onClick={() => setModalOpen(true)}>
+                            order
+                        </ButtonBlue>
+                    </ServiceBtn>
+                </ServiceHover>
             </Service>
         </ServiceContainer>
         {/* <ServiceBtn>

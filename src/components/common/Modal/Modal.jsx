@@ -2,7 +2,7 @@ import { ErrorMessage, Field, Form, Formik } from "formik"
 import { useContext } from "react";
 import styled from "styled-components"
 import * as Yup from "yup";
-import { questionsApi } from "../../../api/instance";
+import { sendQuestions } from "../../../api/instance";
 import { ModalContext } from "../../../App";
 import { ButtonBlue } from "../../interface/Button";
 import { InputForm, ValidationError } from "../../interface/form";
@@ -67,7 +67,7 @@ const Modal = () => {
                     .required("Required"),
             })}
             onSubmit={(values, actions) => {
-                questionsApi(values).then(data => console.log(data))
+                sendQuestions(values).then(data => console.log(data))
                 actions.resetForm()
             }}>
             {props => (

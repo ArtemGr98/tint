@@ -8,12 +8,12 @@ export const ServiceContainer = styled.div`
   width: 100%;
 `
 export const ServiceHover = styled.div`
-  display: none;
-  /* opacity: 0;
-  transition: all 1s; */
-  /* position: relative; */
-  /* bottom: -300px; */
-  /* z-index: -1; */
+  /* display: none; */
+  opacity: 0;
+  transition: all 1s;
+  position: relative;
+  bottom: -300px;
+  z-index: -1;
 `
 export const ColumnContainer = styled.div`
   display: flex;
@@ -35,10 +35,10 @@ export const Service = styled.div`
 
   &:hover {
     ${ServiceHover} {
-      display: block;
-      /* opacity: 1; */
-      /* bottom: 0; */
-      /* z-index: 1; */
+      /* display: block; */
+      opacity: 1;
+      bottom: 0;
+      z-index: 1;
     }
   }
   ${Title} {
