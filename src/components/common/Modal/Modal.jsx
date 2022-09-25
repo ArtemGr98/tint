@@ -4,8 +4,10 @@ import styled from "styled-components"
 import * as Yup from "yup";
 import { sendQuestions } from "../../../api/instance";
 import { ModalContext } from "../../../App";
+import { useSendQuestions } from "../../../hooks/queryHooks";
 import { ButtonBlue } from "../../interface/Button";
 import { InputForm, ValidationError } from "../../interface/form";
+import Loader from "../Loader/Loader";
 
 const ModalBlock = styled.div`
     position: fixed;
@@ -51,6 +53,7 @@ const ModalClose = styled.button`
 
 const Modal = () => {
     const {setModalOpen} = useContext(ModalContext)
+    const {mutateAsync, isLoading} = useSendQuestions()
 
     return <ModalBlock>
         <ModalClose onClick={() => setModalOpen(false)}>✗</ModalClose>
@@ -67,10 +70,11 @@ const Modal = () => {
                     .required("Required"),
             })}
             onSubmit={(values, actions) => {
-                sendQuestions(values).then(data => console.log(data))
+                mutateAsync(values)
                 actions.resetForm()
             }}>
-            {props => (
+            {props => <>
+                {isLoading && <Loader />}
                 <Form>
                     <div>
                         <Field type="text" name="name" placeholder="Full name *" component={InputForm}/>
@@ -105,7 +109,7 @@ const Modal = () => {
                         Get ESTIMATE
                     </ButtonBlue>
                 </Form>
-            )}
+            </>}
         </Formik>
     </ModalBlock> 
 }

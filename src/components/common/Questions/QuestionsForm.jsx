@@ -31,17 +31,16 @@ const QuestionsForm = () => {
                 <QuestionsFlex>
                     <div>
                         <Field type="text" name="name" placeholder="name" component={InputForm}/>
-                        <ErrorMessage name="name" component={ValidationError}/>
                     </div>
                     <div>
                         <Field type="text" name="message" placeholder="Message" component={InputForm}/>
-                        <ErrorMessage name="message" component={ValidationError}/>
+                        {/* <ErrorMessage name="message" component={ValidationError}/> */}
                     </div>
                 </QuestionsFlex>
                <QuestionsFlex>
                    <div>
                        <Field type="email" name="email" placeholder="Email *" component={InputForm}/>
-                       <ErrorMessage name="email" component={ValidationError}/>
+                       {/* <ErrorMessage name="email" component={ValidationError}/> */}
                    </div>
                    <QuestionsFlex>
                        <QuestionsBtnText>We provide loaner cars</QuestionsBtnText>
