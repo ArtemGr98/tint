@@ -3,11 +3,11 @@ import {ButtonBlue} from "../../interface/Button";
 import * as Yup from "yup";
 import {InputForm, ValidationError} from "../../interface/form";
 import {QuestionsBtnText, QuestionsFlex} from "./QuestionsStyles";
-import {sendQuestions} from "../../../api/instance";
 import { useSendQuestions } from "../../../hooks/queryHooks";
+import Loader from "../Loader/Loader";
 
 const QuestionsForm = () => {
-    const {mutateAsync} = useSendQuestions()
+    const {mutateAsync, isLoading} = useSendQuestions()
     return <Formik
         initialValues={{
             name: '',
@@ -21,12 +21,12 @@ const QuestionsForm = () => {
                 .required("Required"),
         })}
         onSubmit={(values, actions) => {
-            // sendQuestions(values).then(data => console.log(data))
             mutateAsync(values)
             actions.resetForm()
         }}
     >
-        {props => (
+        {props => <>
+            {isLoading && <Loader />}
             <Form>
                 <QuestionsFlex>
                     <div>
@@ -45,12 +45,13 @@ const QuestionsForm = () => {
                    </div>
                    <QuestionsFlex>
                        <QuestionsBtnText>We provide loaner cars</QuestionsBtnText>
-                       <ButtonBlue type="submit">
+                       <ButtonBlue type="submit" disabled={!(props.isValid && props.dirty)}>
                            Book a loaner
                        </ButtonBlue>
                    </QuestionsFlex>
                </QuestionsFlex>
-            </Form>)}
+            </Form>
+            </>}
     </Formik>
 }
 export default QuestionsForm

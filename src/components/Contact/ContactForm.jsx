@@ -1,11 +1,11 @@
 import {ErrorMessage, Field, Form, Formik} from "formik";
 import * as Yup from "yup";
-import {sendQuestions} from "../../api/instance";
 import {InputForm, ValidationError} from "../interface/form";
 import {ButtonBlue} from "../interface/Button";
 import styled from "styled-components";
 import backgroundImg from "../../img/Contact/Rectangle 881.png"
 import { useSendQuestions } from "../../hooks/queryHooks";
+import Loader from "../common/Loader/Loader";
 
 const ContactFormWrapper = styled.div`
   background-image: url("${props => props.backgroundImg}");
@@ -20,9 +20,10 @@ const ContactFormWrapper = styled.div`
 `
 
 const ContactForm = () => {
-    const {mutateAsync} = useSendQuestions()
+    const {mutateAsync, isLoading} = useSendQuestions()
  
     return <ContactFormWrapper backgroundImg={backgroundImg}>
+        {isLoading && <Loader />}
         <Formik
             initialValues={{
                 name: '',
@@ -36,7 +37,6 @@ const ContactForm = () => {
                     .required("Required"),
             })}
             onSubmit={(values, actions) => {
-                // sendQuestions(values).then(data => console.log(data))
                 mutateAsync(values)
                 actions.resetForm()
             }}>

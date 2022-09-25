@@ -16,6 +16,12 @@ export const ButtonBlue = styled.button`
   &:active {
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
+  &:disabled {
+    background: #828282;
+    color: #BDBDBD;
+    box-shadow: none;
+    border: none
+  }
 `
 export const ButtonWhite = styled(ButtonBlue)`
   background: white;

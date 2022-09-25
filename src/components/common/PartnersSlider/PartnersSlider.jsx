@@ -5,7 +5,7 @@ import slideImg1 from "../../../img/Partners/Frame.png"
 import slideImg2 from "../../../img/Partners/Frame (1).png"
 import slideImg3 from "../../../img/Partners/Frame (2).png"
 import slideImg4 from "../../../img/Partners/image 2.png"
-import {DealersContainer} from "./DealersStyle";
+import {DealersContainer} from "./PartnersSliderStyle";
 
 const PartnersSlider = () => {
     return <DealersContainer>

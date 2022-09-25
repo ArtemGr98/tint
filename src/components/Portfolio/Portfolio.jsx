@@ -32,7 +32,7 @@ const Portfolio = () => {
             </iframe>
         </InframeContaner>
         {
-            isLoading ? <Loader /> : 
+            isLoading ? <Loader position="fixed" /> : 
             isError ? <ErrorMessage error={error.message} /> :
             data.data.count ? <>
                 <PortfolioImg portfolioImgData={data.data.results} />
